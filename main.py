@@ -37,7 +37,7 @@ b = Button(fr, padx=10, pady=10, text="7", font="lucida 30 bold", bg="#AFA9A7")
 b.pack(side=LEFT,padx=10,pady=10)
 b.bind("<Button-1>", click)
 
-b = Button(fr, padx=10, pady=10, text=" / ", font="lucida 30 bold")
+b = Button(fr, padx=10, pady=10, text="/", font="lucida 30 bold")
 b.pack(side=LEFT,padx=10,pady=10)
 b.bind("<Button-1>", click)
 
@@ -45,6 +45,78 @@ b = Button(fr, padx=10, pady=10, text=" C ", font="lucida 30 bold")
 b.pack(side=LEFT,padx=10,pady=10)
 b.bind("<Button-1>", click)
 
-fr.pack()
+fr.pack(fill="both")
+
+fr = Frame(root)
+
+b = Button(fr, padx=10, pady=10, text="6", font="lucida 30 bold", bg="#AFA9A7")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+b = Button(fr, padx=10, pady=10, text="5", font="lucida 30 bold", bg="#AFA9A7")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+b = Button(fr, padx=10, pady=10, text="4", font="lucida 30 bold", bg="#AFA9A7")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+b = Button(fr, padx=10, pady=10, text="*", font="lucida 30 bold")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+b = Button(fr, padx=10, pady=10, text="%", font="lucida 30 bold")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+fr.pack(fill="both")
+
+fr = Frame(root)
+
+b = Button(fr, padx=10, pady=10, text="3", font="lucida 30 bold", bg="#AFA9A7")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+b = Button(fr, padx=10, pady=10, text="2", font="lucida 30 bold", bg="#AFA9A7")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+b = Button(fr, padx=10, pady=10, text="1", font="lucida 30 bold", bg="#AFA9A7")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+b = Button(fr, padx=10, pady=10, text="+", font="lucida 30 bold")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+b = Button(fr, padx=10, pady=10, text="-", font="lucida 30 bold")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+fr.pack(fill="both")
+
+fr = Frame(root)
+
+b = Button(fr, padx=10, pady=10, text="  ", font="lucida 30 bold", bg="#AFA9A7")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+b = Button(fr, padx=10, pady=10, text="0", font="lucida 30 bold", bg="#AFA9A7")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+b = Button(fr, padx=10, pady=10, text="  ", font="lucida 30 bold", bg="#AFA9A7")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+b = Button(fr, padx=10, pady=10, text="  ", font="lucida 30 bold")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+b = Button(fr, padx=10, pady=10, text="  ", font="lucida 30 bold")
+b.pack(side=LEFT,padx=10,pady=10)
+b.bind("<Button-1>", click)
+
+fr.pack(fill="both")
 
 root.mainloop()
