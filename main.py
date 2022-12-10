@@ -9,20 +9,27 @@ def click(event):
         if txt_on_screen.get().isdigit():
             value = int(txt_on_screen.get())
         else:
-            value = eval(screen.get())
+            try:
+                value = eval(screen.get())
+            except Exception as e:
+                print(e)
+                value = "Error"
+
         txt_on_screen.set(value)
         screen.update()
+
     elif text == " C ":
         txt_on_screen.set("")
         screen.update()
+
     else:
         txt_on_screen.set(txt_on_screen.get() + text)
         screen.update()
 
 root.geometry("504x578+20+20")
-# root.minsize(504,585)
 root.resizable(False,False)
 root.title("Calculator - tkinter")
+root.iconbitmap("./calculator-icon.ico")
 
 #screen display config
 txt_on_screen = StringVar()
@@ -32,15 +39,15 @@ screen.pack(padx=10, pady=10, fill="both")
 
 fr = Frame(root, bg="#1e3d59")
 
-b = Button(fr, padx=10, pady=10, text="9", font="lucida 30 bold", bg="#ff6e40")
+b = Button(fr, padx=10, pady=10, text="9", font="lucida 30 bold", bg="#ff6e40", foreground="white")
 b.pack(side=LEFT,padx=10,pady=10)
 b.bind("<Button-1>", click)
 
-b = Button(fr, padx=10, pady=10, text="8", font="lucida 30 bold", bg="#ff6e40")
+b = Button(fr, padx=10, pady=10, text="8", font="lucida 30 bold", bg="#ff6e40", foreground="white")
 b.pack(side=LEFT,padx=10,pady=10)
 b.bind("<Button-1>", click)
 
-b = Button(fr, padx=10, pady=10, text="7", font="lucida 30 bold", bg="#ff6e40")
+b = Button(fr, padx=10, pady=10, text="7", font="lucida 30 bold", bg="#ff6e40", foreground="white")
 b.pack(side=LEFT,padx=10,pady=10)
 b.bind("<Button-1>", click)
 
@@ -56,15 +63,15 @@ fr.pack(fill="both")
 
 fr = Frame(root, bg="#1e3d59")
 
-b = Button(fr, padx=10, pady=10, text="6", font="lucida 30 bold", bg="#ff6e40")
+b = Button(fr, padx=10, pady=10, text="6", font="lucida 30 bold", bg="#ff6e40", foreground="white")
 b.pack(side=LEFT,padx=10,pady=10)
 b.bind("<Button-1>", click)
 
-b = Button(fr, padx=10, pady=10, text="5", font="lucida 30 bold", bg="#ff6e40")
+b = Button(fr, padx=10, pady=10, text="5", font="lucida 30 bold", bg="#ff6e40", foreground="white")
 b.pack(side=LEFT,padx=10,pady=10)
 b.bind("<Button-1>", click)
 
-b = Button(fr, padx=10, pady=10, text="4", font="lucida 30 bold", bg="#ff6e40")
+b = Button(fr, padx=10, pady=10, text="4", font="lucida 30 bold", bg="#ff6e40", foreground="white")
 b.pack(side=LEFT,padx=10,pady=10)
 b.bind("<Button-1>", click)
 
@@ -80,15 +87,15 @@ fr.pack(fill="both")
 
 fr = Frame(root, bg="#1e3d59")
 
-b = Button(fr, padx=10, pady=10, text="3", font="lucida 30 bold", bg="#ff6e40")
+b = Button(fr, padx=10, pady=10, text="3", font="lucida 30 bold", bg="#ff6e40", foreground="white")
 b.pack(side=LEFT,padx=10,pady=10)
 b.bind("<Button-1>", click)
 
-b = Button(fr, padx=10, pady=10, text="2", font="lucida 30 bold", bg="#ff6e40")
+b = Button(fr, padx=10, pady=10, text="2", font="lucida 30 bold", bg="#ff6e40", foreground="white")
 b.pack(side=LEFT,padx=10,pady=10)
 b.bind("<Button-1>", click)
 
-b = Button(fr, padx=10, pady=10, text="1", font="lucida 30 bold", bg="#ff6e40")
+b = Button(fr, padx=10, pady=10, text="1", font="lucida 30 bold", bg="#ff6e40", foreground="white")
 b.pack(side=LEFT,padx=10,pady=10)
 b.bind("<Button-1>", click)
 
