@@ -4,8 +4,7 @@
 In this Project I tried building a simple Calculator 
 using python's inbuilt tkinter library.
 I have tried development for the very first time, 
-by doing this project I learned how development 
-really happens.
+by doing this project I learned a bit about development.
 
 
 
